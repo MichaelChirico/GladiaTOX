@@ -4,7 +4,7 @@
 \alias{glPlotPosCtrlMEC}
 \title{Box plot for positive control check}
 \usage{
-glPlotPosCtrlMEC(asid, masked = NULL)
+glPlotPosCtrlMEC(asid, masked=NULL)
 }
 \arguments{
 \item{asid}{Assay source id}
@@ -32,7 +32,7 @@ gtoxConfDefault()
 ## Create boxplot for all endpoints and chemicals tested. Useful to save
 ## plots in a pdf file.
 pp <- glPlotPosCtrlMEC(asid = 1L)
-pp[[1]]
+pp@data
 
 ## Reset configuration
 options(conf_store)
